@@ -84,8 +84,18 @@ h1 {
     display: none;
 }
 
+@keyframes textAnimation {
+    0% {font-size: small;}
+    25% {font-size: medium;}
+    50% {font-size: large;}
+    75% {font-size: larger;}
+    100% {font-size:smaller;}
+    
+}
 
-
+.textAnimation {
+    animation: textAnimation 0.3s infinite;
+}
 /* Responsive */
 
 @media only screen and (max-width: 430px) {
