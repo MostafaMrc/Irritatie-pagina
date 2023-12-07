@@ -159,3 +159,14 @@ h1 {
     }
 }
 
+@keyframes textkleur{
+    0%   {color: lime;}
+    25%  {color: yellow;}
+    50%  {color: purple;}
+    75%  {color: blue;}
+    100% {color: red;}
+}
+.textkleur{
+    animation: textkleur 0.5s infinite;
+}
+
