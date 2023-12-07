@@ -1,17 +1,9 @@
-  // Get references to the image and video elements
-  const fotoIphone = document.getElementById('foto-iphone');
-  const hoverVid = document.getElementById('hoverVid');
+document.getElementById('photo-iphone').addEventListener('click', function() {
+    // Hide the image
+    this.style.display = 'none';
 
-  // Add a mouseover event listener to the iPhone image
-  fotoIphone.addEventListener('mouseover', () => {
-      // Show the video and play it when the image is hovered
-      hoverVid.style.display = 'block';
-      hoverVid.play();
-  });
-
-  // Add a mouseout event listener to the iPhone image (optional)
-  fotoIphone.addEventListener('mouseout', () => {
-      // Pause the video and hide it when the mouse leaves the image (optional)
-      hoverVid.pause();
-      hoverVid.style.display = 'none';
+    // Show and play the video
+    let video = document.getElementById('videoPlayer');
+    video.style.display = 'block';
+    video.play();
   });

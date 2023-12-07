@@ -5,15 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="javascript/video.js">
+    <script src="javascript/video.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="grid-container">
         <div class="grid-item item1"></div>
         <div class="grid-item item2">
-            <img src="OnePager/afbeeldingen/iphone.png" id="foto-iphone">
-            <video src="vids/rickroll.mp4" id="hoverVid" controls style="display: none;"></video>
+            <img src="OnePager/afbeeldingen/iphone.png" id="photo-iphone" style="cursor: pointer;">
+            <video width="320" height="240" controls>
+                <source src="vids/rickroll.mp4" type="video/mp4">
+                <source src="vids/rickroll.mp4" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
         </div>
         <div class="grid-item item3">
             <img src="OnePager/afbeeldingen/logo.svg" id="logo">
