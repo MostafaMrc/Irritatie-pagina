@@ -56,6 +56,19 @@ html, body {
 
 #knop {
     width: 8vw;
+    position: absolute;
+    top: 440px;
+    left: 130px;
+}
+#knop2 {
+    width: 8vw;
+    position: absolute;
+    top: 440px;
+    left: 300px;
+}
+#knop2:hover{
+    left: 800px;
+    top: 700x;
 }
 
 h1 {
@@ -69,6 +82,14 @@ h1 {
 #p2 {
     font-size: 1vw;
     color: grey;
+}
+#leftClickImage {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    max-width: 100%;
+    max-height: 100%;
 }
 #overlay {
     display: none;
