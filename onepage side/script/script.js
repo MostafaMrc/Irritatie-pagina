@@ -12,11 +12,3 @@ window.onload = function () {
     showPopup();
     setInterval(showPopup, 10000);
 };
-function showImage() {
-    var imageContainer = document.getElementById("imageContainer");
-    var image = document.createElement("img");
-    image.src = "path/to/your/image.jpg"; 
-    image.alt = "Image";
-    imageContainer.innerHTML = "";
-    imageContainer.appendChild(image);
-}
