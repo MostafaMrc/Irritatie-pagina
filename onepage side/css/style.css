@@ -112,11 +112,11 @@ h1 {
     100% {color: pink;}
 }
 @keyframes textsize{
-    0% {font-size: 1rem;}
-    25% {font-size: 2rem;}
-    50% {font-size: 3rem;}
-    75% {font-size: 4rem;}
-    100% {font-size: 5rem;}
+    0% {font-size: smaller;}
+    25% {font-size: medium;}
+    50% {font-size: large;}
+    75% {font-size: medium;}
+    100% {font-size: small;}
 }
 @media only screen and (max-width: 430px) {
     .grid-container {
