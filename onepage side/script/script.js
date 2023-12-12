@@ -15,7 +15,7 @@ window.onload = function () {
 function showImage() {
     var imageContainer = document.getElementById("imageContainer");
     var image = document.createElement("img");
-    image.src = "../pictures/untitled.jpg"; 
+    image.src = "path/to/your/image.jpg"; 
     image.alt = "Image";
     imageContainer.innerHTML = "";
     imageContainer.appendChild(image);
