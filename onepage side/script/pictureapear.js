@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var leftClickImage = document.getElementById('leftClickImage');
-    document.querySelector('.item1').addEventListener('click', function() {
-        leftClickImage.style.display = (leftClickImage.style.display === 'none') ? 'block' : 'none';
+    var imageContainer = document.getElementById('imageContainer');
+    document.addEventListener('click', function(event) {
+        if (event.clientX <= window.innerWidth / 2) {
+            var newImage = document.createElement('img');
+            newImage.src = '../picture/Untitled.jpg'; 
+            newImage.classList.add('clickedImage'); 
+            imageContainer.appendChild(newImage);
+        }
     });
 });
