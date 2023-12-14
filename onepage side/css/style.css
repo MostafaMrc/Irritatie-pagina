@@ -119,6 +119,12 @@ h1 {
     height: 100%;
     display: none;
 }
+#showImage{
+    height: 100px;
+    width: 100px;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+}
 .textkleur{
     animation: textkleur 0.7s infinite;
 }

@@ -23,10 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 function showImage() {
-    var image = document.querySelector('.showImage');
-    if (image.style.display === 'none') {
-        image.style.display = 'block';
-    } else {
-        image.style.display = 'none';
-    }
+    document.getElementById("showImage").style.display="block"
 }
