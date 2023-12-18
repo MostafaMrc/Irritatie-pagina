@@ -5,7 +5,12 @@ html, body {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#spinningPicture {
+    position: absolute;
+    width: 8vw;
+    top: 440px;
+    left: 130px;
+  }
 .grid-container {
     display: grid;
     grid-template-columns: 10vw 10vw 10vw 20vw 50vw;
@@ -83,14 +88,6 @@ h1 {
     font-size: 1vw;
     color: grey;
 }
-#leftClickImage {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    max-width: 100%;
-    max-height: 100%;
-}
 #overlay {
     display: none;
     position: fixed;
@@ -119,15 +116,12 @@ h1 {
     height: 100%;
     display: none;
 }
-#showImage{
-    height: 100px;
-    width: 100px;
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 3;
-}
 .textkleur{
     animation: textkleur 0.7s infinite;
 }
+#movingPicture {
+    position: absolute;
+  }
 
 .textsize{
     animation: textsize 0.3s infinite;

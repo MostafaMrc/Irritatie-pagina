@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-function showImage() {
-    document.getElementById("showImage").style.display="block"
-}
+window.onload = function() {
+    const spinningPicture = document.getElementById('spinningPicture');
+    let rotationAngle = 0;
+  
+    function spinPicture() {
+      rotationAngle += 2;
+      spinningPicture.style.transform = `translate(-50%, -50%) rotate(${rotationAngle}deg)`;
+      requestAnimationFrame(spinPicture);
+    }
+  
+    spinPicture();
+  };
